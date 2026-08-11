@@ -5,7 +5,7 @@ layout: default
 <section markdown="1">
 ## Biography
 
-<img class="profile-picture" src="images/profile_padded.jpg">
+<img class="profile-picture" src="images/kyojun_profile.jpg">
 
 {{ site.data.profile.bio }}
 
