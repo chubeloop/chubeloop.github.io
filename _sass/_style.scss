@@ -1,6 +1,9 @@
 @import "vars";
 
-/* Basic */
+/*
+ * Basic
+ */
+
 html {
     height: 100%;
     margin: 0;
@@ -8,6 +11,9 @@ html {
 }
 body {
     margin: 0;
+//     font-family: "Inconsolata";
+//     font-family: 'Open Sans', sans-serif;
+//     font-family: 'Roboto', sans-serif;
     font-family: 'Noto Sans TC', sans-serif;
     height: 100%;
 }
@@ -25,7 +31,10 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Navbar */
+/*
+ * Navbar
+ */
+
 #author-name {
     font-size: 34px;
     font-weight: 500;
@@ -71,20 +80,23 @@ hr {
 }
 
 /* Institute Image */
+
 #ins-logo {
-    margin: auto;
-    display: block;
-    max-height: 100px;
-    text-align: center;
+	margin: auto;
+	display: block;
+	max-height: 100px;
+	text-align: center;
 }
 
 /* Mobile */
+
 @media (max-width: 800px) {
     .container {
         max-width: $med-width;
         transition: 0.3s ease all;
     }
 }
+
 @media (max-width: 650px) {
     .container {
         max-width: 83%;
@@ -93,33 +105,67 @@ hr {
         margin-top: 5px;
     }
 }
+
 @media (max-width: 500px) {
-    .navbar {
-        text-align: center;
-        padding: 50px 0px 0px 0px;
-    }
-    #author-name {
-        width: 100%;
-        float: none;
-    }
-    #navlist {
-        padding: 10px 0 10px 0;
-        margin: 0;
-        display: block;
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-    #navlist li.alignable {
-        display: inline-block;
-    }
-    #navlist li.pull-left {
-        float: none;
-    }
-    #navlist li.nav-list {
-        margin: 0;
-    }
+	.navbar {
+		text-align: center;
+		padding: 50px 0px 0px 0px;
+	}
+	#author-name {
+		width: 100%;
+		float: none;
+	}
+	#navlist {
+		padding: 10px 0 10px 0;
+		margin: 0;
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#navlist li.alignable {
+		display: inline-block;
+	}
+	#navlist li.pull-left {
+		float: none;
+	}
+	#navlist li.nav-list {
+		margin: 0;
+	}
 }
 
 @import "typography";
 @import "tables";
+
+img.icon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 14px;
+    vertical-align: middle;
+}
+
+img.edu-logo {
+    display: inline-block;
+    width: auto;
+    height: 16px;
+    margin: 0 0 0 4px;
+    vertical-align: -3px;
+}
+
+.content h2 {
+    font-weight: 500;
+}
+
+.content {
+    margin-top: 24px;
+    padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+}
+
+.content section {
+    margin-bottom: 32px;
+
+    h2 {
+        margin-top: 0;
+    }
+}

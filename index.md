@@ -1,49 +1,40 @@
 ---
 layout: default
-title: KyoJun Choo
 ---
 
-<section>
-  <h2 id="biography">Biography</h2>
+<section markdown="1">
+## Biography
 
-  <p><img class="profile-picture" src="https://github.com/chubeloop.png" alt="KyoJun Choo"></p>
+<img class="profile-picture" src="images/profile_padded.png">
 
-  <p>KyoJun Choo is a researcher in the <a href="https://sites.google.com/view/ssu-nlp/home">Natural Language Processing Lab</a> at <a href="https://ssu.ac.kr/">Soongsil University</a>. His research focuses on <b>Large Language Models (LLMs)</b>, with particular interests in <b>LLM evaluation</b>, <b>benchmark robustness and validity</b>, <b>representation-level interpretability</b>, and <b>tool / agent capabilities</b>. He is interested in understanding what language models encode internally, whether current benchmarks faithfully measure the capabilities they claim to evaluate, and how evaluation should evolve for tool-augmented and rapidly changing language models.</p>
+{{ site.data.profile.bio }}
 
-  <p><a href="https://github.com/chubeloop"><img class="icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/github.svg" alt="GitHub"></a><a href="https://kr.linkedin.com/in/kyojun-choo-8047b339a"><img class="icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/linkedin.svg" alt="LinkedIn"></a><a href="https://sites.google.com/view/ssu-nlp/home"><img class="icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/googlechrome.svg" alt="Lab Page"></a></p>
+{% if site.data.profile.email %}<a href="mailto:{{ site.data.profile.email }}"><img class="icon" src="images/gmail.svg" alt="Email"></a>{% endif %}{% if site.data.profile.github %}<a href="{{ site.data.profile.github }}"><img class="icon" src="images/github.svg" alt="GitHub"></a>{% endif %}{% if site.data.profile.linkedin %}<a href="{{ site.data.profile.linkedin }}"><img class="icon" src="images/linkedin.svg" alt="LinkedIn"></a>{% endif %}{% if site.data.profile.scholar %}<a href="{{ site.data.profile.scholar }}"><img class="icon" src="images/googlescholar.svg" alt="Google Scholar"></a>{% endif %}
 </section>
 
-<section>
-  <h2 id="research-interests">Research Interests</h2>
+<section markdown="1">
+## Research Interests
 
-  <ul>
-    <li>Large Language Model Evaluation</li>
-    <li>Benchmark Reliability, Robustness, and Contamination</li>
-    <li>Representation-level / Mechanistic Interpretability of LLMs</li>
-    <li>Tool Use and Agent Evaluation</li>
-    <li>Korean Language and Culture Evaluation for LLMs</li>
-  </ul>
+{% for i in site.data.interests %}* {{ i }}
+{% endfor %}
 </section>
 
-<section>
-  <h2 id="education">Education</h2>
+<section markdown="1">
+## Education
 
-  <ul>
-    <li><strong>B.S. in Software (ongoing)</strong>: Soongsil University, Seoul, Republic of Korea <img class="edu-logo" src="https://seonghyeoncho.github.io/images/soongsil.png" alt=""></li>
-  </ul>
+{% for e in site.data.education %}* **{{ e.period }}**: {{ e.degree }}, {{ e.school }}{% if e.advisor %} (Advisor: {% if e.advisor_link %}<a href="{{ e.advisor_link }}">{{ e.advisor }}</a>{% else %}{{ e.advisor }}{% endif %}){% endif %}{% if e.logo %} <img class="edu-logo" src="{{ e.logo }}" alt="">{% endif %}
+{% endfor %}
 </section>
 
-<section>
-  <h2 id="work-experiences">Work Experiences</h2>
+<section markdown="1">
+## Work Experiences
 
-  <ul>
-    <li><strong>Soongsil NLP Lab</strong>: Researcher <a href="https://sites.google.com/view/ssu-nlp/home"><img class="edu-logo" src="https://seonghyeoncho.github.io/images/soongsil_nlp.png" alt=""></a></li>
-    <li><strong>Korean LLM Evaluation Framework Project</strong>: Research Contributor</li>
-  </ul>
+{% for w in site.data.experience %}* **{{ w.period }}**: {{ w.org }}, {{ w.role }}{% if w.logo %} {% if w.logo_link %}<a href="{{ w.logo_link }}"><img class="edu-logo" src="{{ w.logo }}" alt=""></a>{% else %}<img class="edu-logo" src="{{ w.logo }}" alt="">{% endif %}{% endif %}
+{% endfor %}
 </section>
 
-<section>
-  <h2 id="publications">Publications</h2>
+<section markdown="1">
+## Publications
 
-  <p>A curated publication list will be added soon.</p>
+A curated publication list will be added soon.
 </section>

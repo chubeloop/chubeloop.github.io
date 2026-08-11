@@ -2,14 +2,9 @@ title: KyoJun Choo
 url: "https://chubeloop.github.io"
 baseurl: ""
 
-author: KyoJun Choo
-description: "KyoJun Choo - NLP and Large Language Model researcher at Soongsil University."
-
 markdown: kramdown
 
 footer: no
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
 
 sass:
   style: compressed
