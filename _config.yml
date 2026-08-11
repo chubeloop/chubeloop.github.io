@@ -10,4 +10,8 @@ sass:
   style: compressed
   sass_dir: _sass
 
-nav: []
+nav:
+ - name: "CV"
+   link: "/cv/"
+ - name: "NLP Lab"
+   link: "https://sites.google.com/view/ssu-nlp/home"
