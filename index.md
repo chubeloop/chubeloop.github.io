@@ -5,11 +5,11 @@ layout: default
 <section markdown="1">
 ## Biography
 
-<img class="profile-picture" src="images/profile_padded.png">
+<img class="profile-picture" src="images/profile_padded.jpg">
 
 {{ site.data.profile.bio }}
 
-{% if site.data.profile.email %}<a href="mailto:{{ site.data.profile.email }}"><img class="icon" src="images/gmail.svg" alt="Email"></a>{% endif %}{% if site.data.profile.github %}<a href="{{ site.data.profile.github }}"><img class="icon" src="images/github.svg" alt="GitHub"></a>{% endif %}{% if site.data.profile.linkedin %}<a href="{{ site.data.profile.linkedin }}"><img class="icon" src="images/linkedin.svg" alt="LinkedIn"></a>{% endif %}{% if site.data.profile.scholar %}<a href="{{ site.data.profile.scholar }}"><img class="icon" src="images/googlescholar.svg" alt="Google Scholar"></a>{% endif %}
+{% if site.data.profile.email %}<a href="mailto:{{ site.data.profile.email }}"><img class="icon" src="images/gmail.svg" alt="Email"></a>{% endif %}<a href="{{ site.data.profile.github }}"><img class="icon" src="images/github.svg" alt="GitHub"></a><a href="{{ site.data.profile.linkedin }}"><img class="icon" src="images/linkedin.svg" alt="LinkedIn"></a>{% if site.data.profile.scholar %}<a href="{{ site.data.profile.scholar }}"><img class="icon" src="images/googlescholar.svg" alt="Google Scholar"></a>{% endif %}
 </section>
 
 <section markdown="1">

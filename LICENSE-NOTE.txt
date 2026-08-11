@@ -1,7 +1,0 @@
-This site package is derived from the GPL-3.0-licensed Researcher Jekyll theme
-and the publicly available structure of Parkchanjun/Parkchanjun.github.io.
-
-Original theme: https://github.com/ankitsultana/researcher
-Reference repository: https://github.com/Parkchanjun/Parkchanjun.github.io
-
-Retain the original GPL-3.0 license terms when redistributing derivative theme code.

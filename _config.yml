@@ -7,11 +7,9 @@ markdown: kramdown
 footer: no
 
 sass:
-  style: compressed
-  sass_dir: _sass
+    style: compressed
+    sass_dir: _sass
 
 nav:
  - name: "CV"
-   link: "/cv/"
- - name: "NLP Lab"
-   link: "https://sites.google.com/view/ssu-nlp/home"
+   link: "cv.pdf"

@@ -1,0 +1,63 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 747 >>
+stream
+BT
+/F1 22 Tf
+72 760 Td
+(KyoJun Choo) Tj
+/F1 11 Tf
+0 -26 Td
+(Researcher, Soongsil University NLP Lab) Tj
+0 -18 Td
+(GitHub: https://github.com/chubeloop) Tj
+0 -18 Td
+(LinkedIn: https://kr.linkedin.com/in/kyojun-choo-8047b339a) Tj
+0 -30 Td
+(Research Interests) Tj
+0 -18 Td
+(LLM evaluation, benchmark reliability, interpretability, tool/agent evaluation,) Tj
+0 -18 Td
+(and Korean language and culture evaluation for LLMs.) Tj
+0 -30 Td
+(Education) Tj
+0 -18 Td
+(B.S. in Software, Soongsil University \(ongoing\).) Tj
+0 -30 Td
+(Experience) Tj
+0 -18 Td
+(Researcher, Soongsil NLP Lab.) Tj
+0 -18 Td
+(Research Contributor, Korean LLM Evaluation Framework Project.) Tj
+0 -30 Td
+(Publications) Tj
+0 -18 Td
+(A curated publication list will be added soon.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001039 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1109
+%%EOF

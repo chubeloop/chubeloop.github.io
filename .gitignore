@@ -1,0 +1,6 @@
+_site/
+.jekyll-cache/
+.DS_Store
+cv/*.aux
+cv/*.log
+cv/*.out
