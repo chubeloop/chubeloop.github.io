@@ -1,13 +1,15 @@
 bio: >
-  KyoJun Choo is a researcher in the
-  [Natural Language Processing Lab](https://sites.google.com/view/ssu-nlp/home)
-  at [Soongsil University](https://ssu.ac.kr/).
-  His research focuses on Large Language Models (LLMs), with particular interests in
-  LLM evaluation, benchmark robustness and validity, representation-level interpretability,
-  and tool / agent capabilities.
-  He is interested in understanding what language models encode internally, whether current
-  benchmarks faithfully measure the capabilities they claim to evaluate, and how evaluation
-  should evolve for tool-augmented and rapidly changing language models.
+  KyoJun Choo is a student in Software at
+  [Soongsil University](https://ssu.ac.kr/), where he is a researcher in the
+  [Natural Language Processing Lab](https://sites.google.com/view/ssu-nlp/home).
+  His research centers on Large Language Models (LLMs), especially on evaluating model
+  capabilities more reliably and understanding what models encode in their internal
+  representations. He is particularly interested in LLM evaluation, benchmark robustness
+  and validity, representation-level interpretability, and tool / agent capabilities.
+  He also studies Korean-language evaluation, including factuality, reasoning, safety,
+  and culturally grounded assessment. His long-term goal is to build evaluation methods
+  that help people understand language models more clearly and use them more reliably in
+  real-world settings. For more details, please see his [CV](./cv.pdf).
 email:
 github: https://github.com/chubeloop
 linkedin: https://kr.linkedin.com/in/kyojun-choo-8047b339a
