@@ -26,4 +26,4 @@ A GitHub Pages template adapted to match the overall structure and look of Profe
 ## Notes
 
 - The profile image currently uses your GitHub avatar: `https://github.com/chubeloop.png`
-- The site uses the `researcher` Jekyll theme via `remote_theme`.
+- The site keeps the `researcher`-style layout locally through `_layouts`, `_sass`, and `css`.

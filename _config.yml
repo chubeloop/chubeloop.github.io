@@ -22,7 +22,3 @@ nav:
     link: "https://sites.google.com/view/ssu-nlp/home"
   - name: "Contact"
     link: "/contact/"
-
-remote_theme: ankitsultana/researcher@gem
-plugins:
-  - jekyll-remote-theme
