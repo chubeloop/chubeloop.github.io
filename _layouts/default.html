@@ -20,7 +20,7 @@
         {% assign url = site.url | append: site.baseurl | append: page.url %}
     {% endif %}
     <meta name="description" content="{{ desc }}">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     {% if site.favicon %}
         <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
@@ -41,18 +41,19 @@
                 <img id="ins-logo" src="{{ site.ins_logo }}" />
             {% endif %}
             <a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}/">{{ site.title }}</a>
-            <ul id="navlist" class="alignable pull-right navbar-ul">
-                {% for x in site.nav %}
-                    <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
-                    {% if forloop.last == false %}
-                        /
-                    {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
+            {% if site.nav and site.nav.size > 0 %}
+                <ul id="navlist" class="alignable pull-right navbar-ul">
+                    {% for x in site.nav %}
+                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                        {% if forloop.last == false %}
+                            /
+                        {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         </div>
         <div style="clear:both"></div>
-        <hr>
         {% if page.is_contact == true %}
             <div class="container content contact">
         {% else %}
