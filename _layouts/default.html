@@ -1,36 +1,73 @@
----
----
-
-<!doctype html>
-{% include copyright.html %}
-<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
-
-    <div class="initial-content">
-      {{ content }}
-      {% include after-content.html %}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="NLP, LLM, {{ site.author }}, {{ site.title }}, jekyll">
+    <meta name="author" content="{{ site.author }}">
+    {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url=/">
     {% endif %}
-
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
+    {% if page.description %}
+        {% assign desc = page.description %}
+    {% else %}
+        {% assign desc = site.description %}
+    {% endif %}
+    {% if page.url %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% else %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% endif %}
+    <meta name="description" content="{{ desc }}">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    {% if site.favicon %}
+        <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
+        <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
+    {% endif %}
+    <meta property="og:description" content="{{ desc }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ desc }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            {% if site.ins_logo %}
+                <img id="ins-logo" src="{{ site.ins_logo }}" />
+            {% endif %}
+            <a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <ul id="navlist" class="alignable pull-right navbar-ul">
+                {% for x in site.nav %}
+                    <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                    {% if forloop.last == false %}
+                        /
+                    {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        {% if page.is_contact == true %}
+            <div class="container content contact">
+        {% else %}
+            <div class="container content">
+        {% endif %}
+                {{ content }}
+                {% if site.footer == true %}
+                    <hr />
+                    <p style="text-align: center; margin-bottom: 10px">
+                    <a href="{{ site.footer_url }}" style="color: black"><small>{{ site.footer_text }}</small></a>
+                    </p>
+                {% endif %}
+            </div>
     </div>
-
-    {% include scripts.html %}
-  </body>
+</body>
+<footer>
+</footer>
 </html>
