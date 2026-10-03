@@ -52,3 +52,16 @@ layout: default
 {% endfor %}
 {% endfor %}
 </section>
+
+<section markdown="1">
+## Patents
+
+### Domestic Patent Applications
+
+{% for p in site.data.patents %}
+* **{{ p.title_en }}**  
+  *{{ p.title_ko }}*  
+  {{ p.authors }}  
+  {{ p.meta }}
+{% endfor %}
+</section>
