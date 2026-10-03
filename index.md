@@ -29,7 +29,7 @@ layout: default
 <section markdown="1">
 ## Work Experiences
 
-{% for w in site.data.experience %}* **{{ w.period }}**: {{ w.org }}, {{ w.role }}{% if w.logo %} {% if w.logo_link %}<a href="{{ w.logo_link }}"><img class="edu-logo" src="{{ w.logo }}" alt=""></a>{% else %}<img class="edu-logo" src="{{ w.logo }}" alt="">{% endif %}{% endif %}
+{% for w in site.data.experience %}* **{{ w.period }}**: {{ w.org }}, {{ w.role }}{% if w.advisor %} (Advisor: {% if w.advisor_link %}<a href="{{ w.advisor_link }}">{{ w.advisor }}</a>{% else %}{{ w.advisor }}{% endif %}){% endif %}{% if w.logo %} {% if w.logo_link %}<a href="{{ w.logo_link }}"><img class="edu-logo" src="{{ w.logo }}" alt=""></a>{% else %}<img class="edu-logo" src="{{ w.logo }}" alt="">{% endif %}{% endif %}
 {% endfor %}
 </section>
 
