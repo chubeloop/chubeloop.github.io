@@ -157,6 +157,11 @@ img.edu-logo {
     font-weight: 500;
 }
 
+.content h3 {
+    font-weight: 500;
+    margin: 16px 0 8px 0;
+}
+
 .content {
     margin-top: 24px;
     padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));

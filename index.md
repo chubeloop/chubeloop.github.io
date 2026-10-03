@@ -35,6 +35,20 @@ layout: default
 
 <section markdown="1">
 ## Publications
+{% for c in site.data.publications %}
+### {{ c.category }}
 
-A curated publication list will be added soon.
+{% for p in c.items %}* **{{ p.title }}**<br>{{ p.authors }}<br>**[{{ p.venue }}]**
+{% endfor %}
+{% endfor %}
+</section>
+
+<section markdown="1">
+## Patents
+{% for c in site.data.patents %}
+### {{ c.category }}
+
+{% for p in c.items %}* **{{ p.title }}**<br>*{{ p.title_ko }}*<br>{{ p.inventors }}<br>{{ p.status }}
+{% endfor %}
+{% endfor %}
 </section>

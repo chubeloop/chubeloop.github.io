@@ -1,0 +1,22 @@
+- category: Conferences
+  items:
+    - title: "Structured but Silent: Probing Capability Requirements in LLM Hidden States"
+      authors: "<u>Kyojun Choo</u>, Minsoo Song, Yunju Kang, Chanjun Park<sup>†</sup>"
+      venue: AACL-IJCNLP 2026 - Findings
+- category: Domestic Conferences
+  items:
+    - title: 행동적 타당성 감사를 통한 리더보드 강건성 분석 연구
+      authors: "<u>추교준</u>, 송민수, 조성현, 장지윤, 남채린, 박찬준<sup>†</sup>"
+      venue: HCLT 2026
+    - title: 오답의 의미적 타당성 제거를 통한 LLM 벤치마크 결함 문항 식별
+      authors: "송민수, 김찬우, <u>추교준</u>, 송은서, 장지윤, 남채린, 이시현, 박찬준<sup>†</sup>"
+      venue: HCLT 2026 - 우수 논문
+    - title: 많은 정보가 더 나은 예측을 만드는가? 대규모 언어 모델의 인간 어휘 이해도 예측 분석
+      authors: "송은서, 조성현, 남채린, <u>추교준</u>, 금지우, 박찬준<sup>†</sup>"
+      venue: HCLT 2026
+    - title: "K-Press: 한국어 벤치마크 능력 프로파일링을 위한 문항 기반 능력 축 유도"
+      authors: "장지윤, 조성현, 김도윤, 송지훈, <u>추교준</u>, 금지우, 박찬준<sup>†</sup>"
+      venue: HCLT 2026
+    - title: "한국어 상충 페르소나 지시에서의 LLM 해결 양상 분석: 동일 우선순위를 중심으로"
+      authors: "이시현, 금지우, 송지훈, <u>추교준</u>, 김찬우, 박찬준<sup>†</sup>"
+      venue: HCLT 2026
