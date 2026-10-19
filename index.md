@@ -44,6 +44,12 @@ layout: default
 </section>
 
 <section markdown="1">
+## Awards
+
+* **Best Paper Award (HCLT 2026)**<br>오답의 의미적 타당성 제거를 통한 LLM 벤치마크 결함 문항 식별<br>송민수, 김찬우, <u>추교준</u>, 송은서, 장지윤, 남채린, 이시현, 박찬준<sup>†</sup><br>*한글 및 한국어 정보처리 학술대회 (HCLT) 2026*
+</section>
+
+<section markdown="1">
 ## Patents
 {% for c in site.data.patents %}
 ### {{ c.category }}
