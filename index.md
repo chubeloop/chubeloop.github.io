@@ -35,10 +35,12 @@ layout: default
 
 <section markdown="1">
 ## Publications
+
+*Equal contribution*: *, *Corresponding author*: <sup>†</sup>
 {% for c in site.data.publications %}
 ### {{ c.category }}
 
-{% for p in c.items %}* **{{ p.title }}**<br>{{ p.authors }}<br>**[{{ p.venue }}]**
+{% for p in c.items %}1. **{{ p.title }}**<br>{{ p.authors }}<br>*{{ p.venue }}*
 {% endfor %}
 {% endfor %}
 </section>
