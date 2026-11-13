@@ -1,5 +1,8 @@
 - category: Conferences
   items:
+    - title: "Silent Arbitration: How Large Language Models Resolve Co-Authoritative Conflicting Instructions"
+      authors: "Sihyeon Lee, Jiwoo Kum, Jihun Song, <u>Kyojun Choo</u>, Chanwoo Kim, Chanjun Park"
+      venue: EACL 2027 - Findings (Accepted)
     - title: "Structured but Silent: Probing Capability Requirements in LLM Hidden States"
       authors: "<u>Kyojun Choo</u>, Minsoo Song, Yunju Kang, Chanjun Park<sup>†</sup>"
       venue: AACL-IJCNLP 2026 - Findings
